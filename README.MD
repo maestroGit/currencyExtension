@@ -15,25 +15,42 @@ El formato del manifiesto tiene un montón de opciones, que se pueden ver en est
 
 ### git
 *Crear rama*
+```
 git branch test
+```
 
 *Cambiar de rama**
+```
 git checkout test
+```
 
 *Ya no estaremos en la rama master , sino que en la rama test, podremos hacer todos los cambios que deseemos sin miedo a romper nada.*
 *Antes de volver nuevamente a la rama master, tenemos que hacer un git push y poner al día la rama test.*
 
 *Para volver a la rama master:*
+```
 git checkout master
+```
+
+*Para unir la rama en master:*
+```
+git merge test
+```
 
 *Borrar una rama*
+```
 git branch -d test
+```
 
 *Para forzar el borrado en caso de algún error:*
+```
 git branch -D test
+```
 
 *Para eliminar el repositorio remosto git push origin :*
+```
 git push origin :test
+```
 
 ```
 curl "https://api.frankfurter.app/latest?amount=1000000&from=GBP&to=USD"
