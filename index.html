@@ -2,27 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png" />
     <title>Chrome Extensión</title>
 </head>
 
 <body>
-    <div>
-        <h2>Lista procedente de API</h2>
-        <ul>Lista
-            <li>
-            </li>
-    </div>
+    <h2>DATE:
+        <spam id="today"></spam>
+    </h2>
     <div class="select">
-        <!-- crera listener onchange="updatevalue() -->-
-        <select name="currency" class="currency" onchange="updatevalue()"></select>
+        <div>
+            <select name="currency" class="currency"></select>
+            <input type="number" class="form-input" id="amount" placeholder="0">
+        </div>
+        <div>
+            <select name="currency" class="currency"></select>
+            <input type="number" class="form-input" id="output" placeholder="">
+        </div>
+    </div>
+    <div>
+        <h2>Currencies - Norma ISO 4217</h2>
+        <ul id="ul">
+        </ul>
     </div>
 </body>
 <!-- Add app.js File -->
-<script src="app.js">
-</script>
+<script src="app.js"></script>
 
 </html>

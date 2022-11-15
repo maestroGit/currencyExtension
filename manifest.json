@@ -1,0 +1,15 @@
+{
+    "name": "Currency rates",
+    "version": "1.0.0",
+    "description": "Chrome extension to calculate currency rates",
+    "icons": {
+        "18": "/img/currency.png",
+        "32": "/img/favicon-32x32.png"
+    },
+    "manifest_version": 3,
+    "author": "Walk Experience",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Currency"
+    }
+}
